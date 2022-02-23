@@ -1,0 +1,158 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{color: #8f8f8f; }
+
+
+/*  Headings */
+
+.big-heading{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+/* Containers */
+
+.container-fluid{                   /*  overrides the default BS styling */
+    padding: 7% 15%;
+}
+
+
+/* Sections */
+
+.colored-sec{
+    background-color: #ff4c68;
+    color: #ffff;
+}
+
+.white-sec{
+    background-color: #fff;
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    font-weight: 300;               /*  font-weight: 300 == 'M0ntserrat-Light; in old google fonts  */
+}
+
+.download-button{                   /* Download button | custom CSS class, not from bootstap    */
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Title Section */
+
+/* #title{
+    text-align: left;               After code refactoring this is combined below in #title .container-fluid
+} */
+                                    /*  COMBINING CSS Selectors*/                                   
+#title .container-fluid{            /* Apply padding to class="container-fluid" but which is contained in id="title" section only*/
+    padding: 3% 15% 7%;             /*  override prev class with this & this is more specific than the previous class   */
+    text-align: left;
+}
+
+.title-img{                         /* Title image      | reducing with from 100% to 60% from  its parent col-6 */
+    width: 60%;
+    transform: rotate(25deg);       /*   transforms the img & rotates it by given degrees using predefind rotate()   */
+    margin-left: 15%;               /*   remove when using  */
+}
+
+
+/* Features Section */
+
+.feature-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.feature-box{
+    padding: 5%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{                         /* pseudo class added so that on hover icons change color   */
+    color: #ff4c68;
+}
+
+
+/* Testimonial Section */
+
+#testimonials{
+    background-color: #ef8172;
+}
+
+.price-text, .section-heading, .testimonial-txt{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-img{
+    width: 10%;
+    border-radius: 100%;
+    padding: 1.25rem;
+}
+
+
+/* Logos */
+
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 1.25rem 1.25rem 3.125rem;
+}
+
+
+/* Pricing Section */
+
+#pricing{
+    padding: 6.25rem;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+
+/* Call to Action - Section */
+
+
+
+/* Footer Section */
+
+.social-icon{
+    margin: 1.25rem 0.625rem;
+}
